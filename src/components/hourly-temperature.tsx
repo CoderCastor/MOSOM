@@ -3,7 +3,6 @@ import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import { LineChart, ResponsiveContainer, XAxis } from "recharts";
 import { format } from "date-fns";
 
-
 interface HourlyTempratureProps {
   data: ForecastData;
 }
@@ -30,7 +29,7 @@ function HourlyTemprature({ data }: HourlyTempratureProps) {
                 fontSize={12}
                 tickLine={false}
                 axisLine={false}
-                tickFormatter={(value)=> `${value}°`}
+                tickFormatter={(value) => `${value}°`}
               />
             </LineChart>
           </ResponsiveContainer>
