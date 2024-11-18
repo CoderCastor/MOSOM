@@ -1,6 +1,6 @@
 import type { ForecastData } from "./api/types";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
-import { Line, LineChart, ResponsiveContainer, XAxis } from "recharts";
+import { LineChart, ResponsiveContainer, XAxis } from "recharts";
 import { format } from "date-fns";
 
 interface HourlyTempratureProps {
