@@ -7,12 +7,12 @@ interface HourlyTempratureProps {
   data: ForecastData;
 }
 
-// function HourlyTemprature({ data }: HourlyTempratureProps) {
-//   const chartData = data.list.slice(0, 8).map((item) => ({
-//     time: format(new Date(item.dt * 1000), "ha"),
-//     temp: Math.round(item.main.temp),
-//     feels_like: Math.round(item.main.feels_like),
-//   }));
+function HourlyTemprature({ data }: HourlyTempratureProps) {
+  const chartData = data.list.slice(0, 8).map((item) => ({
+    time: format(new Date(item.dt * 1000), "ha"),
+    temp: Math.round(item.main.temp),
+    feels_like: Math.round(item.main.feels_like),
+  }));
 
   return (
     <Card className="flex-1">
