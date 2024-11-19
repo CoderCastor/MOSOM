@@ -70,6 +70,7 @@ function WeatherForecast({data}:WeatherForecastProps) {
                         {formatTemp(day.temp_max)}
                     </span>
                 </div>
+                
 
 
                 <div className="flex justify-end gap-4 flex-col md:flex-row">
