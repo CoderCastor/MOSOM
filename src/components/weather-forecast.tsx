@@ -21,6 +21,7 @@ interface DailyForecast {
     }
 }
 
+
 function WeatherForecast({data}:WeatherForecastProps) {
 
     const dailyForcasts = data.list.reduce((acc, forecast) => {
