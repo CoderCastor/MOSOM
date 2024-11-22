@@ -1,4 +1,5 @@
 import CurrentWeather from "@/components/current-weather";
+import FavoriteCities from "@/components/favorite-cities";
 import { useGeolocation } from "@/components/hooks/use-geolocation";
 import { useForecastQuery, useReverseGeocodeQuery, useWeatherQuery } from "@/components/hooks/use-weather";
 import HourlyTemprature from "@/components/hourly-temperature";
@@ -90,6 +91,7 @@ function WeatherDashboard() {
   return (
     <div className="space-y-4">
       {/* FavoriteCities */}
+      <FavoriteCities/>
       <div className="flex items-center justify-between">
         <h1 className="text-xl font-bold tracking-tight">My Location</h1>
         <Button

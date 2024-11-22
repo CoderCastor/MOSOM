@@ -32,7 +32,7 @@ export function useFavorite() {
     ) => {
          const newFavorite:FavoriteCity = {
             ...city,
-            id:`${city.lat}-${city.lon}-${Date.now()}`,
+            id:`${city.lat}-${city.lon}`,
             addedAt :Date.now()
          }
 

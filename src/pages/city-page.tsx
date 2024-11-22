@@ -1,4 +1,5 @@
 import CurrentWeather from "@/components/current-weather"
+import FavoriteButton from "@/components/favorite-button"
 import { useForecastQuery, useWeatherQuery } from "@/components/hooks/use-weather"
 import HourlyTemprature from "@/components/hourly-temperature"
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
@@ -42,6 +43,9 @@ function CityPage() {
       {/* FavoriteCities */}
       <div className="flex items-center justify-between">
         <h1 className="text-3xl font-bold ml-3">{params.cityName}, {weatherQuery.data.sys.country}</h1>
+        <div>
+          <FavoriteButton data={{...weatherQuery.data, name:params.cityName }} />
+        </div>
       </div>
 
       {/* currently and hourly weather */}
