@@ -7,7 +7,7 @@ import {
 
 interface CurrentWeatherProps {
   data: WeatherData;
-  locationName: GeocodingResponse;
+  locationName?: GeocodingResponse;
 }
 
 function CurrentWeather({ data, locationName }: CurrentWeatherProps) {
@@ -31,7 +31,7 @@ function CurrentWeather({ data, locationName }: CurrentWeatherProps) {
                 </h2>
                 {locationName?.state && (
                   <span className="text-muted-foreground">
-                    , {locationName.state}
+                    , {locationName?.state}
                   </span>
                 )}
               </div>
