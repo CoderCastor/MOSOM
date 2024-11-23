@@ -17,7 +17,7 @@ function Layout({children}: PropsWithChildren) {
             <div className='flex justify-center items-center gap-3 mt-3'>
               <a className='' href="https://www.linkedin.com/in/coder-castor/"><img className='h-8' src="/linkedin.png" alt="" /></a>
               <a href="https://github.com/codercastor"><img className='h-12' src="/github.png" alt="" /></a>
-              <a href=""><img className='h-10' src="/insta.png" alt="" /></a>
+              <a href="https://www.instagram.com/castor_011/"><img className='h-10' src="/insta.png" alt="" /></a>
             </div>
         </footer>
     </div>
