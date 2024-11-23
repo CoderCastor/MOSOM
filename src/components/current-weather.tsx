@@ -40,7 +40,7 @@ function CurrentWeather({ data, locationName }: CurrentWeatherProps) {
               </p>
             </div>
 
-            <div className="grid grid-cols-2 gap-4">
+            <div className="flex items-center gap-16 justify-between pr-10">
               <p className="text-7xl font-bold tracking-tighter">
                 {formatTemp(temp)}
               </p>

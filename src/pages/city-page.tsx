@@ -50,7 +50,7 @@ function CityPage() {
 
       {/* currently and hourly weather */}
       <div className="grid gap-6">
-        <div className="flex flex-row gap-4">
+        <div className="flex flex-col gap-4">
           {/* current weather */}
           <CurrentWeather data={weatherQuery.data}/>
           <HourlyTemprature data={forecastQuery.data}/>
