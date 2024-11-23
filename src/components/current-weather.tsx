@@ -40,7 +40,7 @@ function CurrentWeather({ data, locationName }: CurrentWeatherProps) {
               </p>
             </div>
 
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-16 justify-between pr-10">
               <p className="text-7xl font-bold tracking-tighter">
                 {formatTemp(temp)}
               </p>
@@ -60,7 +60,7 @@ function CurrentWeather({ data, locationName }: CurrentWeatherProps) {
                 </div>
               </div>
             </div>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="flex justify-between pr-10">
               <div className="flex items-center gap-2">
                 <Droplets className="h-4 w-4 text-blue-500" />
                 <div className="space-y-0.5">
@@ -78,8 +78,8 @@ function CurrentWeather({ data, locationName }: CurrentWeatherProps) {
               </div>
             </div>
           </div>
-          <div>
-            <div className="relative flex aspect-square w-full max-w-[200px] items-center justify-center">
+          <div className="flex justify-center items-center">
+            <div className="relative flex aspect-square w-full max-w-[280px] items-center justify-center">
               <img
                 src={`https://openweathermap.org/img/wn/${currentWeather.icon}@4x.png`}
                 alt={currentWeather.description}
