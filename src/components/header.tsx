@@ -13,8 +13,8 @@ function Header() {
         <Link to={"/"}>
           <img
             src={isDark ? "/logo.png" : "/logo2.png"}
-            alt="KLIMATE LOGO"
-            className="h-14"
+            alt="MOSUM LOGO"
+            className="h-32 mt-4 -ml-3"
           />
         </Link>
         <div className="flex gap-4">
